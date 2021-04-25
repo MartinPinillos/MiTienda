@@ -1,0 +1,33 @@
+body{
+    background-color: $BgBody;
+}
+@mixin producto{
+    background-color: $BgProducto;
+    width: 200px;
+    height: 200px;
+    margin:5px 5px;
+    padding: 5px 5px;
+}
+.producto{
+    @include producto;
+}
+@mixin TextBox{
+    background-color: $BgTextBox;
+    width: 70%;
+    color:white;
+    padding: 5px 5px;
+    margin: 15px 20px;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.TextBox{
+    @include TextBox
+}
+.contenedorContacto{
+    background-color: rgb(61, 58, 58);
+    width: 25%;
+    margin:30px 20px;
+
+}

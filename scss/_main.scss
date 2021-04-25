@@ -1,0 +1,125 @@
+body{
+    background-color: $BgBody;
+}
+.HeaderBarra{
+    background-color: $BgBarra;
+    p{
+        color: $Texto;
+        text-align: center;
+        position: relative;
+        left: 15px;
+    }
+}
+.NavMenu{
+    background-color:$BgHeader;
+    padding-bottom: 15px;
+}
+.NavMenu-Logo{
+    color: $Texto-secundario;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background-color:$BgLogo;
+    padding: 10px 15px;
+    position: relative;
+    right: 50px;
+}
+.BotoneraMenu{
+    background-color:$BgNavBotonera;
+    width:100%;
+    ul{
+        position: relative;
+        left: 330px;
+        padding: 8px;
+        li{
+            display: inline-block;
+            a{
+                display: inline-block;
+                padding: 0 10px;
+                text-decoration: none; 
+                color: $Texto-secundario;
+                font-size: 20px;
+            }
+        }
+    }
+}
+.iconoWhatsapp img{
+    position: fixed;
+    width: 100px;
+    height: 90px;
+    z-index: 2;
+    bottom: 5px;
+    right: 5px;
+ } 
+
+ /********************* Footer */
+footer{
+    display: grid;
+    background-color:$BgFooter;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: 
+    "footerNav footerMedPago footerContacto footerRedes"
+    ;
+}
+    .footerNav{
+        grid-area: footerNav;
+        display: flex;
+        flex-direction: column;
+        align-items:center ;
+        margin-right: 100px;
+    }
+        .Navegacion{
+            display: flex;
+            flex-direction: row;
+            
+        }
+        .Navegacion ul li{
+            margin-right: 15px;
+            color: $TextoFooter;
+            font-size: 15px;
+        }
+        .Navegacion ul li a{
+            text-decoration: none;
+            color: $TextoFooter;
+        }
+
+    .footerMedPago{
+        grid-area: footerMedPago;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .footerMedPago .MedioPago{
+            display: flex;
+            justify-content: center;
+        }
+        .footerMedPago .cardImagen {
+            margin: 0 5px 5px 0;
+            border: 1px solid #00000012;
+            height: 25px;
+            display: inline-block;
+            
+        }
+    .footerContacto{
+        grid-area: footerContacto;
+        text-align: center;
+    }
+        .Contacto{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    .footerRedes{
+        grid-area: footerRedes;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+        .footerRedes .RedesSociales{
+            display: flex;
+            flex-direction: row;
+        }
+            .footerRedes .RedesSociales img{
+                width: 50px;
+                margin: 5px;
+            }
+    
